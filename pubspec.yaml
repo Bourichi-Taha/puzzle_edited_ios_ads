@@ -6,7 +6,7 @@ publish_to: "none" # Prevents accidental publishing to pub.dev
 version: 1.0.1+2
 
 environment:
-  sdk: ">=3.4.1 <4.0.0"
+  sdk: ">=3.5.4 <4.0.0"
 
 dependencies:
   in_app_review: ^2.0.9
