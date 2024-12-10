@@ -34,7 +34,6 @@ target 'Runner' do
   # Pods for ads integrations
   pod 'Google-Mobile-Ads-SDK'   # AdMob
   pod 'FBAudienceNetwork'       # Facebook Audience Network
-  pod 'UnityAds'                # Unity Ads
   pod 'AppLovinSDK'             # AppLovin SDK
 
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
