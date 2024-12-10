@@ -1,0 +1,94 @@
+{
+  "app_name": "Puzzle Game",
+  "app_icon": "assets/onboarding_1.png",
+  "cover": "assets/splash.png",
+  "main_color": "2ECC71",
+  "contact": "contact@email.com",
+  "about": "path_to",
+  "privacy": "path_to",
+  "terms": "path_to",
+  "intro": [
+    {
+      "title": "Title 1",
+      "description": "Description 1",
+      "icon": "assets/onboarding_1.png"
+    },
+    {
+      "title": "Title 2",
+      "description": "Description 2",
+      "icon": "assets/onboarding_2.png"
+    },
+    {
+      "title": "Title 3",
+      "description": "Description 3",
+      "icon": "assets/onboarding_3.png"
+    }
+  ],
+  "puzzles": [
+    {
+      "images": ["assets/mission1.jpeg", "assets/mission2.jpeg"],
+      "level": "Amateur"
+    },
+    {
+      "images": ["assets/mission1.jpeg", "assets/mission2.jpeg"],
+      "level": "Beginner"
+    },
+    {
+      "images": ["assets/mission1.jpeg", "assets/mission2.jpeg"],
+      "level": "Trainee"
+    },
+    {
+      "images": ["assets/mission1.jpeg", "assets/mission2.jpeg"],
+      "level": "Intellectual"
+    },
+    {
+      "images": [
+        "assets/mission1.jpeg",
+        "assets/mission2.jpeg",
+        "assets/mission1.jpeg",
+        "assets/mission1.jpeg"
+      ],
+      "level": "Talent"
+    },
+    {
+      "images": [
+        "assets/mission1.jpeg",
+        "assets/mission2.jpeg",
+        "assets/mission1.jpeg",
+        "assets/onboarding_3.png"
+      ],
+      "level": "Specialist"
+    }
+  ],
+  "ad_priority": [
+    {
+      "network": "AdMob",
+      "priority": 1,
+      "interstitial": "ca-app-pub-3940256099942544/1033173712",
+      "native": "ca-app-pub-3940256099942544/2247696110",
+      "banner": "ca-app-pub-3940256099942544/6300978111"
+    },
+    {
+      "network": "UnityAds",
+      "priority": 4,
+      "interstitial": "Interstitial_Android",
+      "native": "",
+      "banner": "Banner_Android",
+      "app_id": "5712423"
+    },
+    {
+      "network": "MetaAds",
+      "priority": 2,
+      "interstitial": "1256390695793858_1256391729127088",
+      "native": "1256390695793858_1256391839127077",
+      "banner": "1256390695793858_1256391625793765"
+    },
+    {
+      "network": "AppLovin",
+      "priority": 3,
+      "interstitial": "26d512ea6876f2ec",
+      "native": "9c887ce9aa106336",
+      "banner": "727ca3a0e2d391e8"
+    }
+  ]
+}

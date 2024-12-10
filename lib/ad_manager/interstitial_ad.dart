@@ -1,0 +1,40 @@
+import 'package:puzzle/ad_manager/admob_ads/admob_ads.dart';
+import 'package:puzzle/ad_manager/applovin_ads/applovin_ads.dart';
+import 'package:puzzle/ad_manager/facebook_ads/facebook_ads.dart';
+import 'package:puzzle/main.dart';
+
+abstract class AppInterstitialAd {
+  static int _clickCount = 0;
+
+  static load() {
+    switch (selectedAdNetwork) {
+      case AdNetwork.admob:
+        return AdMobInterstitialAd.load();
+      case AdNetwork.facebook:
+        return FBInterstitialAd.load();
+      case AdNetwork.applovin:
+        return AppLovinInterstitialAd.load();
+      default:
+        // Handle the case where no ad network is selected (or Unity is removed).
+        return;
+    }
+  }
+
+  static show() {
+    if (++_clickCount >= 4) {
+      _clickCount = 0;
+
+      switch (selectedAdNetwork) {
+        case AdNetwork.admob:
+          return AdMobInterstitialAd.show();
+        case AdNetwork.facebook:
+          return FBInterstitialAd.show();
+        case AdNetwork.applovin:
+          return AppLovinInterstitialAd.show();
+        default:
+          // Handle the case where no ad network is selected (or Unity is removed).
+          return;
+      }
+    }
+  }
+}
